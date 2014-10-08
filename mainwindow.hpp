@@ -1,8 +1,13 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include <infograbber.h>
+#include <player.hpp>
+
 #include <QMainWindow>
 #include <QProcess>
+#include <QTimer>
+
 
 namespace Ui {
 class MainWindow;
@@ -12,15 +17,21 @@ class MainWindow : public QMainWindow {
     Q_OBJECT
 
     Ui::MainWindow *mUi;
-    QProcess mProcess;
+    InfoGrabber mInfoGrabber;
+    Player mPlayer;
+    QTimer mInfoRealoadTimer;
 
 public:
     explicit MainWindow(QWidget* parent = nullptr);
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
-    void on_pushButton_2_clicked();
+    void startStreamInfoReload();
+    void setupRadioTable();
+
+    void on_pbStart_clicked();
+    void on_pbStop_clicked();
+    void on_hsVolme_valueChanged(int value);
 };
 
 #endif // MAINWINDOW_H
