@@ -4,7 +4,9 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui \
+            webkitwidgets \
+            phonon4qt5
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -14,6 +16,8 @@ QMAKE_CXXFLAGS += -std=c++1y
 TARGET = weareone_player
 TEMPLATE = app
 
+LIBS += -lcurl \
+        -lphonon4qt5
 
 SOURCES += main.cpp\
         mainwindow.cpp \
