@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>729</width>
+    <height>582</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>711</width>
+      <height>261</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Radio Wählen</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="dragDropOverwriteMode">
+        <bool>false</bool>
+       </property>
+       <property name="selectionMode">
+        <enum>QAbstractItemView::SingleSelection</enum>
+       </property>
+       <property name="selectionBehavior">
+        <enum>QAbstractItemView::SelectRows</enum>
+       </property>
+       <attribute name="horizontalHeaderVisible">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderCascadingSectionResizes">
+        <bool>true</bool>
+       </attribute>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>193</number>
+       </attribute>
+       <attribute name="verticalHeaderVisible">
+        <bool>true</bool>
+       </attribute>
+       <row>
+        <property name="text">
+         <string>TECHNOBASE</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>HARDBASE</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>TRANCEBASE</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>CORETIME</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>CLUBTIME</string>
+        </property>
+       </row>
+       <row>
+        <property name="text">
+         <string>HOUSETIME</string>
+        </property>
+       </row>
+       <column>
+        <property name="text">
+         <string>Moderator</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>kb/s</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Zuhörer</string>
+        </property>
+       </column>
+       <item row="0" column="0">
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="0" column="1">
+        <property name="text">
+         <string>192</string>
+        </property>
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="0" column="2">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="1" column="0">
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="1" column="1">
+        <property name="text">
+         <string>192</string>
+        </property>
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="1" column="2">
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="2" column="0">
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="2" column="1">
+        <property name="text">
+         <string>192</string>
+        </property>
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="2" column="2">
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="3" column="0">
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="3" column="1">
+        <property name="text">
+         <string>192</string>
+        </property>
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="3" column="2">
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="4" column="0">
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="4" column="1">
+        <property name="text">
+         <string>192</string>
+        </property>
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="4" column="2">
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="5" column="0">
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="5" column="1">
+        <property name="text">
+         <string>192</string>
+        </property>
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+       <item row="5" column="2">
+        <property name="textAlignment">
+         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>280</y>
+      <width>711</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Player</string>
+    </property>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>420</x>
+       <y>220</y>
+       <width>82</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Stop</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>330</x>
+       <y>220</y>
+       <width>82</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Start</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
