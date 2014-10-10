@@ -13,21 +13,19 @@ enum Stream : int {
     housetime
 };
 
-
-
 inline std::string getUrlFromStreamId(int s) {
     switch(s) {
-    case Stream::technobase: return "http://listen.technobase.fm/tunein-dsl-ram";
+    case Stream::technobase: return "technobase.fm/";
         break;
-    case Stream::hardbase: return "http://listen.hardbase.fm/tunein-dsl-ram";
+    case Stream::hardbase: return "hardbase.fm/";
         break;
-    case Stream::trancebase: return "http://listen.trancebase.fm/tunein-dsl-ram";
+    case Stream::trancebase: return "trancebase.fm/";
         break;
-    case Stream::coretime: return "http://listen.coretime.fm/tunein-dsl-ram";
+    case Stream::coretime: return "coretime.fm/";
         break;
-    case Stream::clubtime: return "http://listen.clubtime.fm/tunein-dsl-ram";
+    case Stream::clubtime: return "clubtime.fm/";
         break;
-    case Stream::housetime: return "http://listen.housetime.fm/tunein-dsl-ram";
+    case Stream::housetime: return "housetime.fm/";
         break;
     default: break;
     }
