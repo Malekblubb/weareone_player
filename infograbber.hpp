@@ -6,6 +6,7 @@
 #include <QWebPage>
 
 #include <map>
+#include <sstream>
 
 enum StreamInfoIndex : int{
     moderator = 5,
@@ -14,12 +15,20 @@ enum StreamInfoIndex : int{
     numListeners
 };
 
+enum TracklistItem : int {
+    trackName = 0,
+    timeAndMod,
+    tracklistShow
+};
+
 class InfoGrabber : public QWidget {
     Q_OBJECT
 
     std::map<int, std::map<int, std::string>> mInfos;
-    QWebPage mPage;
+    std::vector<std::map<int, std::string>> mTracklist;
+    QWebPage mPage, mTracklistPage;
     std::string mWorkData;
+    std::stringstream mTracklistData;
     bool mSiteAvailable{false};
 
 public:
@@ -27,19 +36,26 @@ public:
     virtual ~InfoGrabber() { }
 
     const auto& getStreamInfos() const noexcept { return mInfos; }
+    const auto& getTracklist() const noexcept { return mTracklist; }
 
 public slots:
-    bool grabStreamInfos();
+    void grabStreamInfos();
+    void grabTracklist(int streamId);
 
 signals:
     void gotInfo();
+    void gotTracklist();
 
 private:
     void openSite();
     void parse();
 
+    void openTracklistSite(int streamId);
+    void parseTracklist();
+
 private slots:
     void siteLoaded(bool ok);
+    void tracklistSiteLoaded(bool ok);
 };
 
 #endif // INFOGRABBER_H
