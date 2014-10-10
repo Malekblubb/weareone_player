@@ -1,6 +1,8 @@
 #include "mainwindow.hpp"
 #include "ui_mainwindow.h"
 
+#include <mlk/containers/container_utl.h>
+
 #include <QMessageBox>
 #include <QProcess>
 #include <QTableWidgetItem>
@@ -16,18 +18,21 @@ MainWindow::MainWindow(QWidget* parent)
     mUi->setupUi(this);
     // connect
     connect(mUi->pbManInfoRefresh, SIGNAL(clicked()), this, SLOT(startStreamInfoReload()));
+    connect(mUi->pbRefreshTracklist, SIGNAL(clicked()), this, SLOT(startTracklistReload()));
     connect(&mInfoRealoadTimer, SIGNAL(timeout()), this, SLOT(startStreamInfoReload()));
     connect(&mInfoGrabber, SIGNAL(gotInfo()), this, SLOT(setupRadioTable()));
+    connect(&mInfoGrabber, SIGNAL(gotTracklist()), this, SLOT(setupTracklistTable()));
 
     // get info from the website
     startStreamInfoReload();
+    startTracklistReload();
 
     // player
     mPlayer.setUi(mUi);
     on_hsVolme_valueChanged(50); // set default volume
 
     // reload timer
-    mInfoRealoadTimer.start(1200000);
+    mInfoRealoadTimer.start(600000);
 }
 
 MainWindow::~MainWindow() {
@@ -39,11 +44,14 @@ void MainWindow::startStreamInfoReload() {
     mInfoGrabber.grabStreamInfos();
 }
 
+void MainWindow::startTracklistReload() {
+    mInfoGrabber.grabTracklist(mUi->twStreams->currentRow());
+}
+
 void MainWindow::setupRadioTable() {
     const auto& infos(mInfoGrabber.getStreamInfos());
 
     // insert infos
-    std::cout << "clear" << std::endl;
     for(auto row(0); row < 6; ++row) {
         for(auto col(0), infoIndex(5); col < 3; ++col, ++infoIndex) {
             QTableWidgetItem* item{nullptr};
@@ -54,6 +62,22 @@ void MainWindow::setupRadioTable() {
     }
 
     mUi->lbStreamInfos->setText("Infos geladen");
+}
+
+void MainWindow::setupTracklistTable() {
+    const auto& tracklist(mInfoGrabber.getTracklist());
+
+    mUi->twTracklist->clearContents();
+    mUi->twTracklist->setRowCount(0);
+    mUi->twTracklist->setRowCount(tracklist.size());
+    for(auto row(0); row < static_cast<int>(tracklist.size()); ++row) {
+        for(auto col(0); col < 3; ++col) {
+            if(!mlk::cnt::exists_map_first(col, tracklist.at(row)))
+                continue;
+            auto* item = new QTableWidgetItem{tracklist.at(row).at(col).c_str()};
+            mUi->twTracklist->setItem(row, col, item);
+        }
+    }
 }
 
 // events

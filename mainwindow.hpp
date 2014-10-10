@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <infograbber.h>
+#include <infograbber.hpp>
 #include <player.hpp>
 
 #include <QMainWindow>
@@ -27,7 +27,9 @@ public:
 
 private slots:
     void startStreamInfoReload();
+    void startTracklistReload();
     void setupRadioTable();
+    void setupTracklistTable();
 
     void on_pbStart_clicked();
     void on_pbStop_clicked();
