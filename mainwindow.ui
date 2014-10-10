@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>We aRe oNe - Internetradio Player</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QGroupBox" name="groupBox">
@@ -275,7 +275,7 @@
        <item>
         <widget class="QPushButton" name="pbManInfoRefresh">
          <property name="text">
-          <string>Refresh (automatisch alle 20 Minuten)</string>
+          <string>Refresh (automatisch alle 10 Minuten)</string>
          </property>
         </widget>
        </item>
@@ -366,9 +366,9 @@
     <widget class="QLabel" name="lbStreamStatus">
      <property name="geometry">
       <rect>
-       <x>392</x>
+       <x>380</x>
        <y>52</y>
-       <width>291</width>
+       <width>311</width>
        <height>20</height>
       </rect>
      </property>
@@ -398,6 +398,19 @@
       <string>50</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>540</x>
+       <y>90</y>
+       <width>82</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>PushButton</string>
+     </property>
+    </widget>
    </widget>
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
@@ -417,9 +430,12 @@
      </attribute>
      <layout class="QGridLayout" name="gridLayout_2">
       <item row="0" column="0">
-       <widget class="QTableWidget" name="tableWidget">
+       <widget class="QTableWidget" name="twTracklist">
         <attribute name="horizontalHeaderDefaultSectionSize">
          <number>115</number>
+        </attribute>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
         </attribute>
         <column>
          <property name="text">
@@ -428,14 +444,21 @@
         </column>
         <column>
          <property name="text">
-          <string>Uhrzeit</string>
+          <string>Uhrzeit/Moderator</string>
          </property>
         </column>
         <column>
          <property name="text">
-          <string>Moderator/Show</string>
+          <string>Show</string>
          </property>
         </column>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QPushButton" name="pbRefreshTracklist">
+        <property name="text">
+         <string>Refresh Tracklist</string>
+        </property>
        </widget>
       </item>
      </layout>
