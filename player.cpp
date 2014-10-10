@@ -17,7 +17,7 @@ void Player::setVolume(float vol) {
 }
 
 void Player::start() {
-    Phonon::MediaSource source{QUrl{Streams::getUrlFromStreamId(mCurrentStreamId).c_str()}};
+    Phonon::MediaSource source{QUrl{buildStreamUrl().c_str()}};
     mPlayer.play(source);
     onStreamLoaded();
 }
@@ -28,4 +28,9 @@ void Player::stop() {
 
 void Player::onStreamLoaded() {
     mUi->lbStreamStatus->setText(Streams::getUrlFromStreamId(mCurrentStreamId).c_str());
+}
+
+std::string Player::buildStreamUrl() {
+    auto webUrl(Streams::getUrlFromStreamId(mCurrentStreamId));
+    return "http://listen." + webUrl + "tunein-dsl-ram";
 }

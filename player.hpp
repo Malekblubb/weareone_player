@@ -27,6 +27,7 @@ public:
 
 private:
     void onStreamLoaded();
+    std::string buildStreamUrl();
 };
 
 #endif // PLAYER_H
