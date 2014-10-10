@@ -19,6 +19,8 @@ TEMPLATE = app
 LIBS += -lcurl \
         -lphonon4qt5
 
+INCLUDEPATH += external/mlk/include
+
 SOURCES += main.cpp\
         mainwindow.cpp \
     player.cpp \
@@ -28,6 +30,6 @@ HEADERS  += \
     streams.hpp \
     player.hpp \
     mainwindow.hpp \
-    infograbber.h
+    infograbber.hpp
 
 FORMS    += mainwindow.ui
