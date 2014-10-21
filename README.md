@@ -1,0 +1,1 @@
+![img](http://37.221.194.71/img/wao_player.png)
