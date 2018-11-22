@@ -14,275 +14,388 @@
    <string>We aRe oNe - Internetradio Player</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QGroupBox" name="groupBox">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>711</width>
-      <height>281</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Radio Wählen</string>
-    </property>
-    <layout class="QGridLayout" name="gridLayout">
-     <item row="0" column="0">
-      <widget class="QTableWidget" name="twStreams">
-       <property name="dragDropOverwriteMode">
-        <bool>false</bool>
-       </property>
-       <property name="selectionMode">
-        <enum>QAbstractItemView::SingleSelection</enum>
-       </property>
-       <property name="selectionBehavior">
-        <enum>QAbstractItemView::SelectRows</enum>
-       </property>
-       <property name="showGrid">
-        <bool>true</bool>
-       </property>
-       <attribute name="horizontalHeaderDefaultSectionSize">
-        <number>146</number>
-       </attribute>
-       <row>
-        <property name="text">
-         <string>TECHNOBASE</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>HARDBASE</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>TRANCEBASE</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>CORETIME</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>CLUBTIME</string>
-        </property>
-       </row>
-       <row>
-        <property name="text">
-         <string>HOUSETIME</string>
-        </property>
-       </row>
-       <column>
-        <property name="text">
-         <string>Moderator</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>Show</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>Zuhörer</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>kb/s</string>
-        </property>
-       </column>
-       <item row="0" column="0">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="0" column="1">
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="0" column="2">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="0" column="3">
-        <property name="text">
-         <string>192</string>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="1" column="0">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="1" column="1">
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="1" column="2">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="1" column="3">
-        <property name="text">
-         <string>192</string>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="2" column="0">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="2" column="1">
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="2" column="2">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="2" column="3">
-        <property name="text">
-         <string>192</string>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="3" column="0">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="3" column="1">
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="3" column="2">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="3" column="3">
-        <property name="text">
-         <string>192</string>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="4" column="0">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="4" column="1">
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="4" column="2">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="4" column="3">
-        <property name="text">
-         <string>192</string>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="5" column="0">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="5" column="1">
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="5" column="2">
-        <property name="text">
-         <string/>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-       <item row="5" column="3">
-        <property name="text">
-         <string>192</string>
-        </property>
-        <property name="textAlignment">
-         <set>AlignCenter</set>
-        </property>
-       </item>
-      </widget>
-     </item>
-     <item row="1" column="0">
-      <layout class="QHBoxLayout" name="horizontalLayout">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="title">
+       <string>Radio Wählen</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QPushButton" name="pbManInfoRefresh">
-         <property name="text">
-          <string>Refresh (automatisch alle 10 Minuten)</string>
+        <widget class="QTableWidget" name="twStreams">
+         <property name="dragDropOverwriteMode">
+          <bool>false</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="showGrid">
+          <bool>true</bool>
+         </property>
+         <attribute name="horizontalHeaderDefaultSectionSize">
+          <number>146</number>
+         </attribute>
+         <row>
+          <property name="text">
+           <string>TECHNOBASE</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>HARDBASE</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>TRANCEBASE</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>CORETIME</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>CLUBTIME</string>
+          </property>
+         </row>
+         <row>
+          <property name="text">
+           <string>HOUSETIME</string>
+          </property>
+         </row>
+         <column>
+          <property name="text">
+           <string>Moderator</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Show</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Zuhörer</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>kb/s</string>
+          </property>
+         </column>
+         <item row="0" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="0" column="1">
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="0" column="2">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="0" column="3">
+          <property name="text">
+           <string>192</string>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="1" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="1" column="1">
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="1" column="2">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="1" column="3">
+          <property name="text">
+           <string>192</string>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="2" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="2" column="1">
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="2" column="2">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="2" column="3">
+          <property name="text">
+           <string>192</string>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="3" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="3" column="1">
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="3" column="2">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="3" column="3">
+          <property name="text">
+           <string>192</string>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="4" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="4" column="1">
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="4" column="2">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="4" column="3">
+          <property name="text">
+           <string>192</string>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="5" column="0">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="5" column="1">
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="5" column="2">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+         <item row="5" column="3">
+          <property name="text">
+           <string>192</string>
+          </property>
+          <property name="textAlignment">
+           <set>AlignCenter</set>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QPushButton" name="pbManInfoRefresh">
+           <property name="text">
+            <string>Refresh (automatisch alle 10 Minuten)</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lbStreamInfos">
+           <property name="text">
+            <string>-</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1" rowspan="2">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Tracklist</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QTableWidget" name="twTracklist">
+          <attribute name="horizontalHeaderDefaultSectionSize">
+           <number>115</number>
+          </attribute>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>Titel</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Uhrzeit/Moderator</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Show</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pbRefreshTracklist">
+          <property name="text">
+           <string>Refresh Tracklist</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Sendeplan</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="title">
+       <string>Player</string>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QSlider" name="hsVolme">
+         <property name="maximum">
+          <number>100</number>
+         </property>
+         <property name="value">
+          <number>50</number>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="lbStreamInfos">
+        <widget class="QLabel" name="label">
          <property name="text">
-          <string>-</string>
+          <string>Lautstärke:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbVolume">
+         <property name="text">
+          <string>50</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbStart">
+         <property name="text">
+          <string>Start</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pbStop">
+         <property name="text">
+          <string>Stop</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="lbStreamStatus">
+         <property name="font">
+          <font>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Kein Stream geladen</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -290,172 +403,9 @@
         </widget>
        </item>
       </layout>
-     </item>
-    </layout>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_2">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>300</y>
-      <width>711</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Player</string>
-    </property>
-    <widget class="QPushButton" name="pbStart">
-     <property name="geometry">
-      <rect>
-       <x>200</x>
-       <y>50</y>
-       <width>82</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Start</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pbStop">
-     <property name="geometry">
-      <rect>
-       <x>290</x>
-       <y>50</y>
-       <width>82</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Stop</string>
-     </property>
-    </widget>
-    <widget class="QSlider" name="hsVolme">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>60</y>
-       <width>160</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="maximum">
-      <number>100</number>
-     </property>
-     <property name="value">
-      <number>50</number>
-     </property>
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
-     </property>
-    </widget>
-    <widget class="QLabel" name="label">
-     <property name="geometry">
-      <rect>
-       <x>14</x>
-       <y>40</y>
-       <width>72</width>
-       <height>14</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Lautstärke:</string>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lbStreamStatus">
-     <property name="geometry">
-      <rect>
-       <x>380</x>
-       <y>52</y>
-       <width>311</width>
-       <height>20</height>
-      </rect>
-     </property>
-     <property name="font">
-      <font>
-       <weight>75</weight>
-       <bold>true</bold>
-      </font>
-     </property>
-     <property name="text">
-      <string>Kein Stream geladen</string>
-     </property>
-     <property name="alignment">
-      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lbVolume">
-     <property name="geometry">
-      <rect>
-       <x>100</x>
-       <y>40</y>
-       <width>63</width>
-       <height>14</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>50</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QTabWidget" name="tabWidget">
-    <property name="geometry">
-     <rect>
-      <x>740</x>
-      <y>20</y>
-      <width>381</width>
-      <height>401</height>
-     </rect>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <widget class="QWidget" name="tab">
-     <attribute name="title">
-      <string>Tracklist</string>
-     </attribute>
-     <layout class="QGridLayout" name="gridLayout_2">
-      <item row="0" column="0">
-       <widget class="QTableWidget" name="twTracklist">
-        <attribute name="horizontalHeaderDefaultSectionSize">
-         <number>115</number>
-        </attribute>
-        <attribute name="verticalHeaderVisible">
-         <bool>false</bool>
-        </attribute>
-        <column>
-         <property name="text">
-          <string>Titel</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Uhrzeit/Moderator</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Show</string>
-         </property>
-        </column>
-       </widget>
-      </item>
-      <item row="1" column="0">
-       <widget class="QPushButton" name="pbRefreshTracklist">
-        <property name="text">
-         <string>Refresh Tracklist</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="tab_2">
-     <attribute name="title">
-      <string>Sendeplan</string>
-     </attribute>
-    </widget>
-   </widget>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
