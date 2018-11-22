@@ -42,7 +42,7 @@ namespace Streams
 				break;
 		}
 		return ret;
-    }
+	}
 }// namespace Streams
 
 #endif// STREAMS_HPP

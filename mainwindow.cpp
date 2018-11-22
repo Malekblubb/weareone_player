@@ -18,7 +18,7 @@ MainWindow::MainWindow(QWidget* parent)
     mUi->setupUi(this);
     // connect
 	/*connect(mUi->pbManInfoRefresh, SIGNAL(clicked()), this,
-					SLOT(startStreamInfoReload()));*/ // TODO: implement this with the new weareone.fm site
+									SLOT(startStreamInfoReload()));*/ // TODO: implement this with the new weareone.fm site
 	connect(mUi->pbRefreshTracklist, SIGNAL(clicked()), this,
 			SLOT(startTracklistReload()));
 	connect(&mInfoRealoadTimer, SIGNAL(timeout()), this,
@@ -91,7 +91,7 @@ void MainWindow::setupTracklistTable()
 				new QTableWidgetItem{tracklist.at(row).at(col).c_str()};
             mUi->twTracklist->setItem(row, col, item);
         }
-    }
+	}
 }
 
 // events

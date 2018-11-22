@@ -8,20 +8,23 @@
 #include <map>
 #include <sstream>
 
-enum StreamInfoIndex : int{
+enum StreamInfoIndex : int
+{
     moderator = 5,
     show,
     musicStyle,
     numListeners
 };
 
-enum TracklistItem : int {
-    trackName = 0,
+enum TracklistItem : int
+{
+	trackName = 0,
     timeAndMod,
     tracklistShow
 };
 
-class InfoGrabber : public QWidget {
+class InfoGrabber : public QWidget
+{
     Q_OBJECT
 
     std::map<int, std::map<int, std::string>> mInfos;
@@ -33,7 +36,7 @@ class InfoGrabber : public QWidget {
 
 public:
     InfoGrabber();
-    virtual ~InfoGrabber() { }
+	virtual ~InfoGrabber() {}
 
     const auto& getStreamInfos() const noexcept { return mInfos; }
     const auto& getTracklist() const noexcept { return mTracklist; }
@@ -58,4 +61,4 @@ private slots:
     void tracklistSiteLoaded(bool ok);
 };
 
-#endif // INFOGRABBER_H
+#endif// INFOGRABBER_H
