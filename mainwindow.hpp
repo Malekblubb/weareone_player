@@ -8,15 +8,16 @@
 #include <QProcess>
 #include <QTimer>
 
-
-namespace Ui {
-class MainWindow;
+namespace Ui
+{
+	class MainWindow;
 }
 
-class MainWindow : public QMainWindow {
+class MainWindow : public QMainWindow
+{
     Q_OBJECT
 
-    Ui::MainWindow *mUi;
+	Ui::MainWindow* mUi;
     InfoGrabber mInfoGrabber;
     Player mPlayer;
     QTimer mInfoRealoadTimer;
@@ -34,6 +35,7 @@ private slots:
     void on_pbStart_clicked();
     void on_pbStop_clicked();
     void on_hsVolme_valueChanged(int value);
+	void on_pbManInfoRefresh_clicked();
 };
 
-#endif // MAINWINDOW_H
+#endif// MAINWINDOW_H

@@ -99,12 +99,12 @@
          <string/>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="0" column="1">
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="0" column="2">
@@ -112,7 +112,7 @@
          <string/>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="0" column="3">
@@ -120,7 +120,7 @@
          <string>192</string>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="1" column="0">
@@ -128,12 +128,12 @@
          <string/>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="1" column="1">
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="1" column="2">
@@ -141,7 +141,7 @@
          <string/>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="1" column="3">
@@ -149,7 +149,7 @@
          <string>192</string>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="2" column="0">
@@ -157,12 +157,12 @@
          <string/>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="2" column="1">
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="2" column="2">
@@ -170,7 +170,7 @@
          <string/>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="2" column="3">
@@ -178,7 +178,7 @@
          <string>192</string>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="3" column="0">
@@ -186,12 +186,12 @@
          <string/>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="3" column="1">
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="3" column="2">
@@ -199,7 +199,7 @@
          <string/>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="3" column="3">
@@ -207,7 +207,7 @@
          <string>192</string>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="4" column="0">
@@ -215,12 +215,12 @@
          <string/>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="4" column="1">
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="4" column="2">
@@ -228,7 +228,7 @@
          <string/>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="4" column="3">
@@ -236,7 +236,7 @@
          <string>192</string>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="5" column="0">
@@ -244,12 +244,12 @@
          <string/>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="5" column="1">
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="5" column="2">
@@ -257,7 +257,7 @@
          <string/>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
        <item row="5" column="3">
@@ -265,7 +265,7 @@
          <string>192</string>
         </property>
         <property name="textAlignment">
-         <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+         <set>AlignCenter</set>
         </property>
        </item>
       </widget>
@@ -396,19 +396,6 @@
      </property>
      <property name="text">
       <string>50</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton">
-     <property name="geometry">
-      <rect>
-       <x>540</x>
-       <y>90</y>
-       <width>82</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>PushButton</string>
      </property>
     </widget>
    </widget>
