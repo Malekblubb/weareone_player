@@ -5,11 +5,13 @@
 
 #include <phonon/VideoPlayer>
 
-namespace Ui {
-class MainWindow;
+namespace Ui
+{
+	class MainWindow;
 }
 
-class Player{
+class Player
+{
     Phonon::VideoPlayer mPlayer;
     int mCurrentStreamId;
 
@@ -17,6 +19,7 @@ class Player{
 
 public:
     Player();
+	~Player();
 
     void setStream(int s);
     void setVolume(float vol);
@@ -30,4 +33,4 @@ private:
     std::string buildStreamUrl();
 };
 
-#endif // PLAYER_H
+#endif// PLAYER_H
